@@ -5,7 +5,7 @@ pipeline {
     environment {
         APP_DIRECTORIES = ['GO_Application', 'Next_js_Application', 'Wordpress_Application']
         APP_IMAGES = ['go-app', 'next-app', 'wordpress-app']
-        REGISTRY = 'https://746319289656.dkr.ecr.us-east-1.amazonaws.com/'
+        REGISTRY = 'https://74631926.dkr.ecr.us-east-1.amazonaws.com/'
         CREDENTIALS = 'docker-hub-CREDENTIALS'
         BUILD  = "${APP_IMAGES[i]}:${SANITIZED_BRANCH_NAME}_${BUILD_NUMBER}"
         LATEST_BUILD = "${APP_IMAGES[i]}:latest"
